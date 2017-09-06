@@ -27,9 +27,9 @@
         if ( isset($_POST['mdp'])) {
           // echo '<script>loading();</script>'
           if ($_POST['mdp']=='Jonathan') {
-            echo '<h2>MISSILE NUCLEAIRE</h2>
+            echo '<h2 class="missile">MISSILE NUCLEAIRE</h2>
               </br>
-              <div class="launch">
+              <div class="launch" onclick="boom()">
               </div>
             ';
           }
@@ -84,8 +84,17 @@
 
 
       <script type="text/javascript">
+        function loading(){
+          $('body').append('<div class="loading"></div>');
+          setTimeout(function(){
+            $('.loading').remove();
+          },1500);
+        };
+        loading();
 
-      
+        function boom(){
+          $('.launch').after("<h1>BOOM</h1>")
+        }
       </script>
 
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

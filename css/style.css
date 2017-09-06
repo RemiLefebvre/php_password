@@ -14,7 +14,20 @@ body .loading {
   position: absolute;
   top: 0;
 }
+body .loading::after {
+  content: "LOADING";
+  position: absolute;
+  z-index: 4;
+  margin-left: 40%;
+  margin-top: 30%;
+  font-size: 40px;
+  font-weight: bold;
+}
+body .missile {
+  font-size: 90px;
+}
 body .launch {
+  margin-left: 30%;
   border-radius: 100%;
   background-color: red;
   box-shadow: -2px -2px 10px grey inset;
@@ -24,6 +37,10 @@ body .launch {
 }
 body .launch:hover {
   background-color: #5b0202;
+}
+body h1 {
+  font-size: 150px;
+  color: red;
 }
 body .container {
   display: flex;
