@@ -24,6 +24,23 @@
     </head>
     <body>
 
+      <div class="container">
+        <figure>
+          <img src="" alt="">
+        </figure>
+
+        <h2>PASSWORD</h2>
+
+        <form class="" action="index.html" method="post">
+
+          <input type="text" name="mdp" value="password">
+          <input type="submit" value="OK">
+
+        </form>
+
+        <p>Indice: jaune et attend</p>
+      </div>
+
 
 
       <script src="js/jquery.min.js"></script>
