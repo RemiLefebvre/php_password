@@ -18,34 +18,76 @@
         <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <!-- bootstrap -->
+        <script src="js/jquery.min.js"></script>
 
     </head>
     <body>
 
+      <?php
+        if ( isset($_POST['mdp'])) {
+          // echo '<script>loading();</script>'
+          if ($_POST['mdp']=='Jonathan') {
+            echo '<h2>MISSILE NUCLEAIRE</h2>
+              </br>
+              <div class="launch">
+              </div>
+            ';
+          }
+          else {
+            echo '
+            <div class="container">
+              <div class="">
+                  <figure>
+                    <img src="https://www.shareicon.net/download/2015/08/04/80078_man_512x512.png" alt="user">
+                  </figure>
 
-       <div class="container">
-         <div class="">
-             <figure>
-               <img src="https://www.shareicon.net/download/2015/08/04/80078_man_512x512.png" alt="user">
-             </figure>
+                <h2>PASSWORD</h2> erroné*
 
-           <h2>PASSWORD</h2>
+                <form class="" action="index.php" method="post">
 
-           <form class="" action="index.php" method="post">
+                  <input type="password" name="mdp" value="password">
+                  <input type="submit" value="OK">
 
-             <input type="password" name="mdp" value="password">
-             <input type="submit" value="OK">
+                </form>
 
-           </form>
+                <p>Indice: jaune et attend</p>
+              </div>
+            </div>
+            ';
+          }
+        }
+        else {
+          echo '
+          <div class="container">
+            <div class="">
+                <figure>
+                  <img src="https://www.shareicon.net/download/2015/08/04/80078_man_512x512.png" alt="user">
+                </figure>
 
-           <p>Indice: jaune et attend</p>
-         </div>
-       </div>
+              <h2>PASSWORD</h2>
+
+              <form class="" action="index.php" method="post">
+
+                <input type="password" name="mdp" value="password">
+                <input type="submit" value="OK">
+
+              </form>
+
+              <p>Indice: jaune et attend</p>
+            </div>
+          </div>
+
+          ';
+        }
+
+       ?>
 
 
+      <script type="text/javascript">
 
-      <script src="js/jquery.min.js"></script>
+      
+      </script>
+
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
       <script src="js/plugins.js"></script>
