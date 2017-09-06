@@ -19,27 +19,29 @@
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     </head>
     <body>
 
-      <div class="container">
-        <figure>
-          <img src="" alt="">
-        </figure>
 
-        <h2>PASSWORD</h2>
+       <div class="container">
+         <div class="">
+             <figure>
+               <img src="https://www.shareicon.net/download/2015/08/04/80078_man_512x512.png" alt="user">
+             </figure>
 
-        <form class="" action="index.html" method="post">
+           <h2>PASSWORD</h2>
 
-          <input type="text" name="mdp" value="password">
-          <input type="submit" value="OK">
+           <form class="" action="index.php" method="post">
 
-        </form>
+             <input type="password" name="mdp" value="password">
+             <input type="submit" value="OK">
 
-        <p>Indice: jaune et attend</p>
-      </div>
+           </form>
+
+           <p>Indice: jaune et attend</p>
+         </div>
+       </div>
 
 
 
